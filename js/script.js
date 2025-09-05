@@ -51,7 +51,11 @@ function filterTodo() {
   } else {
     filteredList.forEach((item) => {
       todoListContainer.innerHTML += `
-                <p>${item.task} - Due: ${item.dueDate}</p>
+      <li class="flex justify-between font-bold border-b pb-2 mb-2">
+      <span>Tugas</span>
+      <span>Tanggal</span>
+    </li>
+                <p>${item.task} - ${item.dueDate}</p>
             `;
     });
   }
