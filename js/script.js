@@ -65,7 +65,7 @@ function renderTodoList() {
   todoListContainer.innerHTML += `
     <li class="flex justify-between font-bold border-b pb-2 mb-2">
       <span>Tugas</span>
-      <span>Jatuh Tempo</span>
+      <span>Tanggal</span>
     </li>
   `;
 
@@ -76,7 +76,7 @@ function renderTodoList() {
       todoListContainer.innerHTML += `
         <li class="border-b py-2 flex justify-between items-center">
           <span>${item.task}</span>
-          <span class="text-sm text-gray-500">Due: ${item.dueDate}</span>
+          <span class="text-sm text-gray-500">${item.dueDate}</span>
         </li>
       `;
     });
